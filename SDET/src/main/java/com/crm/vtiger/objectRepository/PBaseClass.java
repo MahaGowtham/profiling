@@ -48,7 +48,7 @@ public class PBaseClass extends WebDriverUtilities{
 			statWD=driver;
 			driver.manage().window().maximize();
 			driver.get(pfile.readDataFromProperties("URL"));
-			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		}
 		
 		@BeforeMethod(groups={"SmokeTest","RegressionTest"})
