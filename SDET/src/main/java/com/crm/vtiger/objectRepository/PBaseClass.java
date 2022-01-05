@@ -1,7 +1,5 @@
 package com.crm.vtiger.objectRepository;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,8 +7,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-
 import com.crm.vtiger.genericUtilities.JavaUtilities;
 import com.crm.vtiger.genericUtilities.PropertyUtility;
 import com.crm.vtiger.webDriverUtility.WebDriverUtilities;
@@ -24,10 +20,10 @@ public class PBaseClass extends WebDriverUtilities{
 		public JavaUtilities ju = new JavaUtilities();
 	
 		@BeforeClass
-		public void launchBrowser(String browser) throws Exception
+		public void launchBrowser() throws Exception
 		{
 			//System.out.println("Launch the Browser");
-			browser=pfile.readDataFromProperties("browser");
+			String browser=pfile.readDataFromProperties("browser");
 			
 			if(browser.equalsIgnoreCase("chrome"))
 					driver=new ChromeDriver();
