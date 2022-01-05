@@ -21,7 +21,7 @@ public class PBaseClass extends WebDriverUtilities{
 		public WebDriverUtilities wu = new WebDriverUtilities();
 		public JavaUtilities ju = new JavaUtilities();
 	
-		@Parameters("browser")
+		
 		@BeforeClass
 		public void launchBrowser() throws Exception
 		{
