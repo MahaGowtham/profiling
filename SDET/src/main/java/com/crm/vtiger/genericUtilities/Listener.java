@@ -8,14 +8,14 @@ import org.testng.ITestListener;
  */
 import org.testng.ITestResult;
 
-import com.crm.vtiger.objectRepository.PBaseClass;
+import com.crm.vtiger.objectRepository.OBaseClass;
 
-public class Listener extends PBaseClass implements ITestListener{
+public class Listener extends OBaseClass implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
 
 		try {
-			wu.takeScreenshot(PBaseClass.statWD, result.getName()+ju.getSystemDate());
+			wu.takeScreenshot(OBaseClass.statWD, result.getName()+ju.getSystemDate());
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
