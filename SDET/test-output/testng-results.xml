@@ -1,63 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27685" started-at="2022-01-03T17:26:57 IST" finished-at="2022-01-03T17:27:25 IST">
+  <suite name="Default suite" duration-ms="20185" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:37 IST">
     <groups>
       <group name="SmokeTest">
-        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="createLeads" class="FileUtilityTest.LeadTest"/>
-        <method signature="OrgTest.createOrg()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="createOrg" class="FileUtilityTest.OrgTest"/>
+        <method signature="CreateOrgTest.createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" class="FileUtilityTest.CreateOrgTest"/>
       </group> <!-- SmokeTest -->
       <group name="RegressionTest">
-        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="createLeads" class="FileUtilityTest.LeadTest"/>
-        <method signature="OrgTest.createOrg()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="createOrg" class="FileUtilityTest.OrgTest"/>
+        <method signature="CreateOrgTest.createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" class="FileUtilityTest.CreateOrgTest"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="Test" duration-ms="27685" started-at="2022-01-03T17:26:57 IST" finished-at="2022-01-03T17:27:25 IST">
-      <class name="FileUtilityTest.LeadTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="launchBrowser" is-config="true" duration-ms="3828" started-at="2022-01-03T17:26:58 IST" finished-at="2022-01-03T17:27:01 IST">
+    <test name="Default test" duration-ms="20185" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:37 IST">
+      <class name="FileUtilityTest.CreateOrgTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="launchBrowser" is-config="true" duration-ms="6294" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="createlogin()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="createlogin" is-config="true" duration-ms="3430" started-at="2022-01-03T17:27:01 IST" finished-at="2022-01-03T17:27:05 IST">
+        <test-method status="PASS" signature="createLogin()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createLogin" is-config="true" duration-ms="5090" started-at="2022-01-05T12:28:23 IST" finished-at="2022-01-05T12:28:28 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createlogin -->
-        <test-method status="PASS" signature="createLeads()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="createLeads" duration-ms="5152" started-at="2022-01-03T17:27:05 IST" finished-at="2022-01-03T17:27:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLeads -->
-        <test-method status="PASS" signature="logoutPage()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="logoutPage" is-config="true" duration-ms="1576" started-at="2022-01-03T17:27:10 IST" finished-at="2022-01-03T17:27:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.LeadTest@51931956]" name="closeBrowser" is-config="true" duration-ms="86" started-at="2022-01-03T17:27:12 IST" finished-at="2022-01-03T17:27:12 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- FileUtilityTest.LeadTest -->
-      <class name="FileUtilityTest.OrgTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="launchBrowser" is-config="true" duration-ms="2712" started-at="2022-01-03T17:27:12 IST" finished-at="2022-01-03T17:27:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="createlogin()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="createlogin" is-config="true" duration-ms="3399" started-at="2022-01-03T17:27:14 IST" finished-at="2022-01-03T17:27:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createlogin -->
-        <test-method status="PASS" signature="createOrg()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="createOrg" duration-ms="5703" started-at="2022-01-03T17:27:18 IST" finished-at="2022-01-03T17:27:23 IST">
+        </test-method> <!-- createLogin -->
+        <test-method status="PASS" signature="createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" duration-ms="95" started-at="2022-01-05T12:28:28 IST" finished-at="2022-01-05T12:28:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrg -->
-        <test-method status="PASS" signature="logoutPage()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="logoutPage" is-config="true" duration-ms="1653" started-at="2022-01-03T17:27:23 IST" finished-at="2022-01-03T17:27:25 IST">
+        <test-method status="PASS" signature="signOut()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="signOut" is-config="true" duration-ms="8417" started-at="2022-01-05T12:28:28 IST" finished-at="2022-01-05T12:28:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.OrgTest@6279cee3]" name="closeBrowser" is-config="true" duration-ms="77" started-at="2022-01-03T17:27:25 IST" finished-at="2022-01-03T17:27:25 IST">
+        </test-method> <!-- signOut -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="closeBrowser" is-config="true" duration-ms="150" started-at="2022-01-05T12:28:37 IST" finished-at="2022-01-05T12:28:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- FileUtilityTest.OrgTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- FileUtilityTest.CreateOrgTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
