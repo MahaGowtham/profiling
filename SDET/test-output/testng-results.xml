@@ -2,38 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14764" started-at="2022-01-05T15:11:04 IST" finished-at="2022-01-05T15:11:19 IST">
+  <suite name="Default suite" duration-ms="20625" started-at="2022-01-05T15:30:00 IST" finished-at="2022-01-05T15:30:20 IST">
     <groups>
-      <group name="SmokeTest">
-        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createLeads" class="FileUtilityTest.LeadTest"/>
-      </group> <!-- SmokeTest -->
-      <group name="RegressionTest">
-        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createLeads" class="FileUtilityTest.LeadTest"/>
-      </group> <!-- RegressionTest -->
     </groups>
-    <test name="Test" duration-ms="14764" started-at="2022-01-05T15:11:04 IST" finished-at="2022-01-05T15:11:19 IST">
+    <test name="Default test" duration-ms="20625" started-at="2022-01-05T15:30:00 IST" finished-at="2022-01-05T15:30:20 IST">
       <class name="FileUtilityTest.LeadTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="launchBrowser" is-config="true" duration-ms="4184" started-at="2022-01-05T15:11:04 IST" finished-at="2022-01-05T15:11:08 IST">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="launchBrowser" is-config="true" duration-ms="4961" started-at="2022-01-05T15:30:00 IST" finished-at="2022-01-05T15:30:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="createlogin()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createlogin" is-config="true" duration-ms="3653" started-at="2022-01-05T15:11:08 IST" finished-at="2022-01-05T15:11:12 IST">
+        <test-method status="PASS" signature="createlogin()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createlogin" is-config="true" duration-ms="5027" started-at="2022-01-05T15:30:05 IST" finished-at="2022-01-05T15:30:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createlogin -->
-        <test-method status="PASS" signature="createLeads()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createLeads" duration-ms="5151" started-at="2022-01-05T15:11:12 IST" finished-at="2022-01-05T15:11:17 IST">
+        <test-method status="PASS" signature="createLeads()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="createLeads" duration-ms="7725" started-at="2022-01-05T15:30:10 IST" finished-at="2022-01-05T15:30:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createLeads -->
-        <test-method status="PASS" signature="logoutPage()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="logoutPage" is-config="true" duration-ms="1594" started-at="2022-01-05T15:11:17 IST" finished-at="2022-01-05T15:11:19 IST">
+        <test-method status="PASS" signature="logoutPage()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="logoutPage" is-config="true" duration-ms="2631" started-at="2022-01-05T15:30:18 IST" finished-at="2022-01-05T15:30:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="closeBrowser" is-config="true" duration-ms="91" started-at="2022-01-05T15:11:19 IST" finished-at="2022-01-05T15:11:19 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.LeadTest@2f0a87b3]" name="closeBrowser" is-config="true" duration-ms="208" started-at="2022-01-05T15:30:20 IST" finished-at="2022-01-05T15:30:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- FileUtilityTest.LeadTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
