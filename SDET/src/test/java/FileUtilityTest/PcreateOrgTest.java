@@ -5,7 +5,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.vtiger.objectRepository.HomePage;
-import com.crm.vtiger.objectRepository.PBaseClass;
+import com.crm.vtiger.objectRepository.OBaseClass;
 
 /**
  * Retry Analyzer Program
@@ -15,7 +15,7 @@ import com.crm.vtiger.objectRepository.PBaseClass;
  */
 /*@Listeners(com.crm.vtiger.genericUtilities.Listener.class)
 
-public class PcreateOrgTest extends PBaseClass {
+public class PcreateOrgTest extends OBaseClass {
 
 	@Test(retryAnalyzer=com.crm.vtiger.genericUtilities.Retry_Analyser.class)
 	

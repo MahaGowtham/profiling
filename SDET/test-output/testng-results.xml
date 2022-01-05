@@ -1,39 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20185" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:37 IST">
+  <suite name="Suite1" duration-ms="126" started-at="2022-01-05T13:20:22 IST" finished-at="2022-01-05T13:20:22 IST">
     <groups>
       <group name="SmokeTest">
-        <method signature="CreateOrgTest.createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" class="FileUtilityTest.CreateOrgTest"/>
+        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@10a035a0]" name="createLeads" class="FileUtilityTest.LeadTest"/>
+        <method signature="OrgTest.createOrg()[pri:0, instance:FileUtilityTest.OrgTest@545997b1]" name="createOrg" class="FileUtilityTest.OrgTest"/>
       </group> <!-- SmokeTest -->
       <group name="RegressionTest">
-        <method signature="CreateOrgTest.createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" class="FileUtilityTest.CreateOrgTest"/>
+        <method signature="LeadTest.createLeads()[pri:0, instance:FileUtilityTest.LeadTest@10a035a0]" name="createLeads" class="FileUtilityTest.LeadTest"/>
+        <method signature="OrgTest.createOrg()[pri:0, instance:FileUtilityTest.OrgTest@545997b1]" name="createOrg" class="FileUtilityTest.OrgTest"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test name="Default test" duration-ms="20185" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:37 IST">
-      <class name="FileUtilityTest.CreateOrgTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="launchBrowser" is-config="true" duration-ms="6294" started-at="2022-01-05T12:28:17 IST" finished-at="2022-01-05T12:28:23 IST">
+    <test name="Test" duration-ms="126" started-at="2022-01-05T13:20:22 IST" finished-at="2022-01-05T13:20:22 IST">
+      <class name="FileUtilityTest.LeadTest">
+        <test-method status="FAIL" signature="createLeads()[pri:0, instance:FileUtilityTest.LeadTest@10a035a0]" name="createLeads" duration-ms="49" started-at="2022-01-05T13:20:22 IST" finished-at="2022-01-05T13:20:22 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at FileUtilityTest.LeadTest.createLeads(LeadTest.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="createLogin()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createLogin" is-config="true" duration-ms="5090" started-at="2022-01-05T12:28:23 IST" finished-at="2022-01-05T12:28:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createLogin -->
-        <test-method status="PASS" signature="createOrg()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="createOrg" duration-ms="95" started-at="2022-01-05T12:28:28 IST" finished-at="2022-01-05T12:28:28 IST">
+        </test-method> <!-- createLeads -->
+      </class> <!-- FileUtilityTest.LeadTest -->
+      <class name="FileUtilityTest.OrgTest">
+        <test-method status="FAIL" signature="createOrg()[pri:0, instance:FileUtilityTest.OrgTest@545997b1]" name="createOrg" duration-ms="2" started-at="2022-01-05T13:20:22 IST" finished-at="2022-01-05T13:20:22 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.click(Unknown Source)
+at FileUtilityTest.OrgTest.createOrg(OrgTest.java:12)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrg -->
-        <test-method status="PASS" signature="signOut()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="signOut" is-config="true" duration-ms="8417" started-at="2022-01-05T12:28:28 IST" finished-at="2022-01-05T12:28:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signOut -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:FileUtilityTest.CreateOrgTest@2641e737]" name="closeBrowser" is-config="true" duration-ms="150" started-at="2022-01-05T12:28:37 IST" finished-at="2022-01-05T12:28:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- FileUtilityTest.CreateOrgTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- FileUtilityTest.OrgTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite1 -->
 </testng-results>

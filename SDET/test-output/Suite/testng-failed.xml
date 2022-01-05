@@ -8,16 +8,16 @@
       </run>
     </groups>
     <classes>
-      <class name="FileUtilityTest.LeadTest">
-        <methods>
-          <include name="createLeads"/>
-        </methods>
-      </class> <!-- FileUtilityTest.LeadTest -->
-      <class name="FileUtilityTest.OrgTest">
+      <class name="FileUtilityTest.CreateOrgTest">
         <methods>
           <include name="createOrg"/>
         </methods>
-      </class> <!-- FileUtilityTest.OrgTest -->
+      </class> <!-- FileUtilityTest.CreateOrgTest -->
+      <class name="FileUtilityTest.CreateLeadsTest">
+        <methods>
+          <include name="createLeads"/>
+        </methods>
+      </class> <!-- FileUtilityTest.CreateLeadsTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
