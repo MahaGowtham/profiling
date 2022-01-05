@@ -5,47 +5,18 @@
 	<groupId>SDET</groupId>
 	<artifactId>SDET</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
-	<profiles>
-		<profile>
-			<id>SmokeTest</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.0.0-M5</version>
-						<configuration>
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
 							<suiteXmlFiles>
 								<suiteXmlFile>testngSmoke.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<profile>
-			<id>RegressionTest</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.0.0-M5</version>
-						<configuration>
-							<suiteXmlFiles>
-								<suiteXmlFile>testngRegression.xml</suiteXmlFile>
-							</suiteXmlFiles>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
-	<build>
-		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
