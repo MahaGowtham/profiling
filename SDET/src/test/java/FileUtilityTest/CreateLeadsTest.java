@@ -7,7 +7,7 @@ import FileUtility.BaseClass1;
 
 public class CreateLeadsTest extends BaseClass1{
 	
-	@Test
+	@Test(groups={"SmokeTest","RegressionTest"})
 	public void createLeads() {
 		driver.findElement(By.xpath("(//a[text()='Leads'])[1]")).click();
 	}

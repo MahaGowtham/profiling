@@ -7,7 +7,7 @@ import FileUtility.BaseClass1;
 
 public class CreateOrgTest extends BaseClass1{
 	
-	@Test
+	@Test(groups={"SmokeTest","RegressionTest"})
 	public void createOrg() throws Throwable
 	{
 		driver.findElement(By.xpath("(//a[text()='Organizations'])[1]"));
